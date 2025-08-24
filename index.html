@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsilenced India - The Story of a Nation's Freedom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to complement Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111111;
+            color: #F3F4F6; /* Off-white */
+        }
+        .font-lora {
+            font-family: 'Lora', serif;
+        }
+        .hero-bg {
+            background-color: #111111;
+            background-image:
+                radial-gradient(at 20% 20%, hsla(28, 100%, 50%, 0.1) 0px, transparent 50%),
+                radial-gradient(at 80% 80%, hsla(0, 100%, 35%, 0.15) 0px, transparent 50%);
+        }
+        .text-shadow-fiery {
+            text-shadow: 0 0 8px rgba(255, 69, 0, 0.6), 0 0 20px rgba(255, 107, 0, 0.5);
+        }
+        .tricolor-gradient {
+            background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+        }
+        .card-bg {
+            background-color: rgba(31, 41, 55, 0.3); /* Semi-transparent dark gray */
+            border: 1px solid rgba(75, 85, 99, 0.5);
+        }
+        .btn-gradient {
+            background: linear-gradient(45deg, #ff4d00, #ff9933);
+        }
+        .btn-gradient:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 107, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="bg-black/50 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="./Images/Unsilenced idea.png" alt="Unsilenced India Logo" class="h-10 w-auto">
+                <span class="text-xl font-bold tracking-wider">UNSILENCED INDIA</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-[#FF9933] transition-colors duration-300">About</a>
+                <a href="#stories" class="hover:text-[#FF9933] transition-colors duration-300">Stories</a>
+                <a href="#heroes" class="hover:text-[#FF9933] transition-colors duration-300">Heroes</a>
+                <a href="#timeline" class="hover:text-[#FF9933] transition-colors duration-300">Timeline</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-center py-20 md:py-32 px-4">
+            <div class="container mx-auto">
+                <!-- Using an accessible image URL for the logo -->
+                <img src="./Images/Unsilenced idea.png" 
+                     width="180" 
+                     height="180" 
+                     alt="Unsilenced India Logo"
+                     class="mx-auto mb-6"
+                     style="filter: drop-shadow(0 0 5px #ff3300) drop-shadow(0 0 15px #ff6600) drop-shadow(0 0 30px #ff1a00);">
+                
+                <h1 class="text-4xl md:text-6xl font-black font-lora leading-tight mb-4 text-shadow-fiery">
+                    Glory Written in <span style="color:#ff4d00;">Blood</span>,<br> Hope Lit by <span style="color:#ffcc00;">Sacrifice</span>
+                </h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-300">
+                    Tears, Worship, Beliefs, and Unshakable Hope – the eternal story of India’s struggle for Independence.
+                </p>
+                <div class="h-1.5 w-48 mx-auto mb-10 tricolor-gradient rounded-full"></div>
+                <a href="#stories" 
+                   class="inline-block px-8 py-3 btn-gradient text-black font-bold rounded-full text-lg transition-transform duration-300 shadow-lg">
+                    Explore Freedom Stories
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 px-4 bg-black/20">
+            <div class="container mx-auto text-center max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 font-lora">The Echoes of a Million Voices</h2>
+                <div class="h-1 w-24 mx-auto mb-8 tricolor-gradient rounded-full"></div>
+                <p class="text-gray-300 leading-relaxed text-lg">
+                    "Unsilenced India" is more than a blog; it is a digital sanctuary dedicated to the memory of those who dreamt of a free India. Our mission is to chronicle the stories of valor, the pain of partition, and the unwavering spirit of the countless souls who fought for the dawn of independence. We delve into the pages of history to bring you the unfiltered, unheard, and unforgettable narratives that shaped a nation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Stories Section -->
+        <section id="stories" class="py-20 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 font-lora">Featured Stories</h2>
+                <div class="h-1 w-24 mx-auto mb-12 tricolor-gradient rounded-full"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Story Card 1 -->
+                    <div class="card-bg rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <img src="./Images/DandiMarch.png" alt="Dandi March" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 font-lora">The Salt March: A Nation's Defiance</h3>
+                            <p class="text-gray-400 mb-4">An act of nonviolent civil disobedience led by Mahatma Gandhi that shook the foundations of the British Raj.</p>
+                            <a href="./Images/DandiMarch1.png" class="font-bold text-[#FF9933] hover:underline">View More &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Story Card 2 -->
+                    <div class="card-bg rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <img src="./Images/QuitIndia.png" alt="Quit India Movement" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 font-lora">Quit India Movement: The Final Call</h3>
+                            <p class="text-gray-400 mb-4">The decisive movement launched in 1942 that became a turning point in the struggle for freedom.</p>
+                            <a href="./Images/QuitIndia1.png" class="font-bold text-[#FF9933] hover:underline">View More &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Story Card 3 -->
+                    <div class="card-bg rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <img src="./Images/PartitionOfIndia.png" alt="The Partition of India" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 font-lora">The Pain of Partition: Scars on the Soul</h3>
+                            <p class="text-gray-400 mb-4">A look into the heart-wrenching stories of the families and lives torn apart by the division of a nation.</p>
+                            <a href="./Images/PartitionOfIndia1.png" class="font-bold text-[#FF9933] hover:underline">View More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesser-Known Heroes Section -->
+        <section id="heroes" class="py-20 px-4 bg-black/20">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 font-lora">Lesser-Known Heroes</h2>
+                <div class="h-1 w-24 mx-auto mb-12 tricolor-gradient rounded-full"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <!-- Hero 1 -->
+                    <div class="p-4">
+                        <img src="./Images/Matangini Hazra.jpeg" alt="Matangini Hazra" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-600">
+                        <h3 class="text-lg font-bold">Matangini Hazra</h3>
+                        <p class="text-gray-400">An elderly revolutionary who led a procession during the Quit India Movement, holding the Indian flag even after being shot.</p>
+                    </div>
+                    <!-- Hero 2 -->
+                    <div class="p-4">
+                        <img src="./Images/Begum Hazrat Mahal.jpeg" alt="Begum Hazrat Mahal" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-600">
+                        <h3 class="text-lg font-bold">Begum Hazrat Mahal</h3>
+                        <p class="text-gray-400">A key figure in the 1857 rebellion, she took charge of Awadh and challenged the British forces with immense courage.</p>
+                    </div>
+                    <!-- Hero 3 -->
+                    <div class="p-4">
+                        <img src="./Images/Surya Sen.jpeg" alt="Surya Sen" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-600">
+                        <h3 class="text-lg font-bold">Surya Sen</h3>
+                        <p class="text-gray-400">A school teacher who led the Chittagong armoury raid, a daring attempt to seize arms and challenge British authority.</p>
+                    </div>
+                    <!-- Hero 4 -->
+                    <div class="p-4">
+                        <img src="./Images/Tirot Sing.jpeg" alt="Tirot Sing" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-600">
+                        <h3 class="text-lg font-bold">Tirot Sing</h3>
+                        <p class="text-gray-400">A Khasi chief who led a guerrilla war against the British in the hills of Meghalaya for four years.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="py-20 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 font-lora">A Timeline of Struggle</h2>
+                <div class="h-1 w-24 mx-auto mb-12 tricolor-gradient rounded-full"></div>
+                <div class="relative max-w-2xl mx-auto">
+                    <!-- Vertical Line -->
+                    <div class="absolute left-1/2 h-full w-0.5 bg-gray-700 -translate-x-1/2"></div>
+                    <!-- Timeline Item 1 -->
+                    <div class="relative mb-8">
+                        <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-4 h-4 rounded-full bg-[#FF9933] border-2 border-black"></div>
+                        <div class="ml-auto md:ml-0 md:w-1/2 md:pr-8 text-right md:text-right">
+                            <h3 class="font-bold text-lg">1857</h3>
+                            <p class="text-gray-400">The First War of Independence, a major uprising against the rule of the British East India Company.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="relative mb-8">
+                        <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-4 h-4 rounded-full bg-white border-2 border-black"></div>
+                        <div class="md:w-1/2 md:pl-8 ml-auto text-left">
+                            <h3 class="font-bold text-lg">1919</h3>
+                            <p class="text-gray-400">Jallianwala Bagh massacre, a turning point that intensified the movement against British rule.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 3 -->
+                    <div class="relative mb-8">
+                        <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-4 h-4 rounded-full bg-[#138808] border-2 border-black"></div>
+                        <div class="ml-auto md:ml-0 md:w-1/2 md:pr-8 text-right md:text-right">
+                            <h3 class="font-bold text-lg">1930</h3>
+                            <p class="text-gray-400">The Dandi March, or Salt Satyagraha, a nationwide nonviolent protest against the British salt tax.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 4 -->
+                    <div class="relative">
+                        <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-4 h-4 rounded-full bg-red-600 border-2 border-black"></div>
+                        <div class="md:w-1/2 md:pl-8 ml-auto text-left">
+                            <h3 class="font-bold text-lg">1947</h3>
+                            <p class="text-gray-400">India achieves independence, accompanied by the painful partition of the subcontinent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 px-4">
+        <div class="container mx-auto text-center text-gray-400">
+            <p>&copy; 2024 Unsilenced India. All Rights Reserved.</p>
+            <p class="mt-2 text-sm">A tribute to the heroes of a free nation.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
